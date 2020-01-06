@@ -73,7 +73,7 @@
 # puts prime?(41)
 
 class Array
-  def random_each
+  def random_each do |el|
     yield el
     # shuffle.each do |el|
     #   yield el
