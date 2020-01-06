@@ -20,12 +20,12 @@
 #   end
 # end
 
-def prime_tester(num)
-  (2..num-1).to_a.map { |possible_factor|
-    puts "#{possible_factor} : #{num % possible_factor}"
-  }
-end
-prime_tester(11)
+# def prime_tester(num)
+#   (2..num-1).to_a.map { |possible_factor|
+#     puts "#{possible_factor} : #{num % possible_factor}"
+#   }
+# end
+# prime_tester(11)
 
 # def prime_tester2(num)
 #   (2..num-1).to_a.map{|possible_factor| possible_factor}
@@ -71,3 +71,15 @@ prime_tester(11)
 # puts prime?(31)
 # puts prime?(37)
 # puts prime?(41)
+
+class Array
+  def random_each
+    shuffle.each do |el|
+      yield el
+    end
+  end
+end
+
+[1,2,3,4,5].random_each do |el|
+  puts el
+end
