@@ -74,13 +74,14 @@
 
 class Array
   def random_each
-    puts shuffle
-    # shuffle.each do |el|
-    #   yield el
-    # end
+    shuffle.each do |el|
+      yield el
+    end
   end
 end
 
-[1,2,3,4,5].random_each do |el|
-  puts el
-end
+[1,2,3,4,5].random_each
+
+# [1,2,3,4,5].random_each do |el|
+#   puts el
+# end
