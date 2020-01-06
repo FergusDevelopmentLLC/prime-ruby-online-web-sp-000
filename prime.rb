@@ -74,7 +74,7 @@
 
 class Array
   def random_each
-    shuffle
+    puts shuffle
     # shuffle.each do |el|
     #   yield el
     # end
