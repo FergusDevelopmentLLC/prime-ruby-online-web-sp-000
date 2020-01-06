@@ -74,9 +74,10 @@
 
 class Array
   def random_each
-    shuffle.each do |el|
-      yield el
-    end
+    yield
+    # shuffle.each do |el|
+    #   yield el
+    # end
   end
 end
 
