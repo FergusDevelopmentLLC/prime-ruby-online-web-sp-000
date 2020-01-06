@@ -80,7 +80,7 @@ class Array
   end
 end
 
-[1,2,3,4,5].random_each
+[1,2,3,4,5].random_each { |el| puts "hey"}
 
 # [1,2,3,4,5].random_each do |el|
 #   puts el
